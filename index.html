@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather Application</title>
+      <link rel="stylesheet" href="index.css">
+      <style>
+            .heading_top{
+                  font-size:25px;
+                  font-weight:bold;
+                  text-align:center;
+                      color: white;
+                  font-family:calibri;
+            }
+            h1 {
+                  text-align: center;
+                  font-style: oblique;
+                  font-size: 55px;
+                  color: white;
+            }
+            @keyframes textclip {
+                  to {
+                        background-position: 200% center;
+                  }
+            }
+      </style>
+</head>
+
+<body>
+      
+      <div id="container">
+            <p class ="heading_top">WEEKLY WEATHER REPORT</p>
+            <div>
+                  <button onclick="getWeather()">Search By Location <span style="margin-left: 35px;"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+            </div>
+            <div id="manual" style="margin-top: 10px; margin-bottom: 10px;">
+                  <input type="text" id="city" placeholder="Enter City Name" />
+                  <button id="submit" onclick="getData()">Submit</button>
+            </div>
+
+            <div id="details">
+            </div>
+
+            <div style="margin: auto; margin-top: 10px;">
+                  <button>Next 7 Days Details</button>
+            </div>
+            <div id="details7Days">
+            </div>
+
+            <div class="mapouter">
+                  <div class="gmap_canvas"><iframe style="width: 100%; height: 300px; border-radius: 10px; margin-top: 10px;" id="gmap_canvas" frameborder="0" scrolling="no"
+                              marginheight="0" marginwidth="0"></iframe>
+                  </div>
+            </div>
+      </div>
+
+      <script src="https://kit.fontawesome.com/8328d59403.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script src="index.js"></script>
