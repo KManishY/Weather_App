@@ -93,7 +93,10 @@ body {
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+.mapouter{
+    margin-bottom: 1rem;
+}
+@media only screen and (max-width: 1200px) {
   
   #manual{
       display:flex;
