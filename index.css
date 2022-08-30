@@ -9,15 +9,15 @@ body {
 #container {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     color: white;
-    line-height: 10px;
+    line-height: 1rem;
     opacity: 95%;
-    width: 50%;
+    width: 60rem;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 1rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 1rem;
 }
 
 #container button {
@@ -26,16 +26,16 @@ body {
     /* background-color: linear-gradient(to top, #0099cc 0%, #006666 100%); */
     color: rgb(76, 11, 255);
     margin: auto;
-    border-radius: 10px;
+    border-radius: 1rem;
     border: none;
-    padding: 20px;
+    padding: 2rem;
     /* font-family: ; */
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 #container div {
     /* border: 1px solid red; */
-    border-radius: 10px;
+    border-radius: 1rem;
     width: 100%;
     margin: auto;
 }
@@ -57,7 +57,7 @@ body {
     text-align: center;
     opacity: 75%;
     color: black;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 #container #manual button {
     width: 29%;
@@ -66,24 +66,25 @@ body {
 
 #details {
     background-color: rgb(92, 95, 133);
-      padding-left:20px;
+    text-align: center;
+      /* padding-left:2rem; */
 }
 
 #container #details7Days {
     margin: auto;
-    margin-top: 10px;
+    margin-top: 1rem;
     /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 10px; */
     display:flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2rem;
 }
 
 #details7Days div {
     /* border: 1px solid red; */
-    width:300px;
+    width:30rem;
     background-color: rgb(92, 95, 133);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
@@ -93,12 +94,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  #container{
-      width: 100%
-  }
+  
   #manual{
       display:flex;
-      flex-direction:column;
+      flex-direction:row;
 
   }
 }
